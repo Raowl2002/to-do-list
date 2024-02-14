@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#EEA5A6;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* main card */
+.container{
+    background-color:#8E7AB5;
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 470px;
+    width:90%;
+    border-radius:25px;
+}
+/* adding element */
+.add{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0 20px 0  ;
+}
+
+.add > input{
+    width:100%;
+    padding: 8px 10px;
+    border-radius: 25px;
+    outline:0px;
+    border:0px;
+    font-size:14px;
+    color:#B784B7;
+    font-weight:25px;
+
+}
+::placeholder{
+    color:#B784B7;
+    opacity: 0.5;
+}
+.add > .addbtn{
+    border-radius:40%;
+    outline:0px;
+    border:0px;
+    padding:10px;
+    margin: 0 20px 0 50px ;
+} 
