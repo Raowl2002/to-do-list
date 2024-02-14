@@ -2,13 +2,14 @@
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
 }
 body{
-    background-color:#EEA5A6;
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
+    width:100%;
+    min-width:100vh;
+    background:linear-gradient(135deg,rgb(135, 65, 215),white);
     background-attachment: fixed;
+    height: 100%;
 }
 
 /* main card */
@@ -25,17 +26,19 @@ body{
     display:flex;
     justify-content: space-between;
     margin:10px 0 20px 0  ;
+    background-color: beige;
+    border-radius: 20px;
 }
 
 .add > input{
     width:100%;
     padding: 10px 10px;
-    border-radius: 25px;
     outline:0px;
     border:0px;
     font-size:18px;
     color:#B784B7;
     font-weight:25px;
+    background:transparent;
 
 }
 ::placeholder{
@@ -43,11 +46,12 @@ body{
     opacity: 0.5;
 }
 .add > .addbtn{
-    border-radius:40%;
+    border-radius:18px;
     outline:0px;
     border:0px;
-    padding:10px;
-    margin: 0 20px 0 50px ;
+    padding:15px 35px;
+    background-color: #B784B7;
+    color:white;
 } 
 /* adding css to the task area */
 .task{
