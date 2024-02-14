@@ -29,11 +29,11 @@ body{
 
 .add > input{
     width:100%;
-    padding: 8px 10px;
+    padding: 10px 10px;
     border-radius: 25px;
     outline:0px;
     border:0px;
-    font-size:14px;
+    font-size:18px;
     color:#B784B7;
     font-weight:25px;
 
@@ -49,3 +49,48 @@ body{
     padding:10px;
     margin: 0 20px 0 50px ;
 } 
+/* adding css to the task area */
+.task{
+    margin-left:25px;
+    display: none;
+}
+.tasks  li{
+    font-size :18px;
+    margin:5px 0;
+    color:white;
+    list-style-type:circle;  
+}
+.tasks{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 5px;    
+    
+}
+.tasks button{
+    border-radius: 30%;
+    height: 20px;
+    border:0;
+    outline:0;
+    color:#F0EAD6;
+    background-color: #8E7AB5;
+    font-size:20px;
+}
+
+/* Animation to disappear element */
+@keyframes disappear{
+    0%{
+        opacity: 1;
+        
+    }
+    50%{
+        opacity:0.5;
+        
+    }
+    100%{
+        display:none;
+        opacity:0;
+        
+    }
+    
+}
+
