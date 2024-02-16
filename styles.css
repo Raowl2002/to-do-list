@@ -61,13 +61,13 @@ body{
 .tasks  li{
     font-size :18px;
     margin:5px 0;
-    color:white;
     list-style-type:circle;  
 }
 .tasks{
     display:flex;
     justify-content: space-between;
-    padding: 10px 30px 10px 5px;    
+    padding: 10px 30px 10px 5px;
+    color:white;    
     
 }
 .tasks button{
