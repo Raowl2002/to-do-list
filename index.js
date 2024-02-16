@@ -4,14 +4,16 @@ const addBtn = document.querySelector(".add button");
 addBtn.addEventListener("click",() =>{
     document.querySelector(".task").style.display = "block";
     if(addTask.value ==""){
+        
         const p = document.createElement("p");
         p.textContent = "Please enter a task!";
-        try{p.classList.add("tasks");}
-        catch(err){
-            console.log(err);
-        }
-        document.getElementById("task").appendChild(p); 
+        p.classList.add("tasks");
+        document.getElementById("task").appendChild(p);
+        setTimeout(() =>{
+            p.style.display = "none";
+        },2000);    
     }else{
+        
         // adding the elements
         const div = document.createElement("div");
         div.classList.add("tasks");
@@ -30,6 +32,10 @@ addBtn.addEventListener("click",() =>{
         // adding the elements to the dom
         document.querySelector(".task").appendChild(div);
         addTask.value = "";
+        saveData();
+
     }
     
 });
+
+
