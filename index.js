@@ -12,6 +12,7 @@ addBtn.addEventListener("click",() =>{
     //Have to add the animation class so that the element disappears
     btn.addEventListener("click",() =>{
         div.remove();
+        addTask.value = "";
     });
     // added content to the added div and list and btn
     list.textContent=addTask.value;
@@ -20,5 +21,6 @@ addBtn.addEventListener("click",() =>{
     div.appendChild(btn);
     // adding the elements to the dom
     document.querySelector(".task").appendChild(div);
+    
 
 });
